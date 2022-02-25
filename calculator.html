@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+ <meta charset="utf-8">
+ <title> calculator </title>
+ <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+    <form class="calculator">
+        <input type="text" id="show">
+        <span class="num" value="1" onclick="display('1')"><i>1</i></span>
+        <span class="num" value="2" onclick="display('2')"><i>2</i></span>
+        <span class="num" value="3" onclick="display('3')"><i>3</i></span>
+        <span class="num plus" value="+" onclick="display('+')"><i>+</i></span>
+        <span class="num" value="4" onclick="display('4')"><i>4</i></span>
+        <span class="num" value="5" onclick="display('5')"><i>5</i></span>
+        <span class="num" value="6" onclick="display('6')"><i>6</i></span>
+        <span class="num minus" value="-" onclick="display('-')"><i>-</i></span>
+        <span class="num" value="7" onclick="display('7')"><i>7</i></span>
+        <span class="num" value="8" onclick="display('8')"><i>8</i></span>
+        <span class="num" value="9" onclick="display('9')"><i>9</i></span>
+        <span class="num multiply" value="*" onclick="display('*')"><i>*</i></span>
+        <span class="num clear" value = "C" onclick = "clearScreen()"><i>C</i></span>
+        <span class="num" value="0" onclick="display('0')"><i>0</i></span>
+        <span class="num equal" value = "=" onclick = "calculate()"><i>=</i></span>
+        <span class="num divide" value="/" onclick="display('/')"><i>/</i></span>
+        
+    </form>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>

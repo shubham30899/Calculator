@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+} 
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #3FBF5D;
+}
+.container{
+    position: relative;
+    min-width: 300px;
+    min-height: 400px;
+    background: #3FBFBF;
+    padding: 40px 30px 30px;
+}
+.calculator{
+    position: relative;
+    display: grid;
+}
+.calculator #show{
+    position: relative;
+    grid-column: span 4;
+    height: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
+}
+.calculator span{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 110px;
+    height: 60px;
+    margin: 8px;
+    background: linear-gradient(60deg, #fff, #fff);
+    color: #728C8C;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+.calculator span::before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, #2f2f2f, #3f3f3f);
+    border-radius: 10px;
+}
+.calculator span::active{
+    filter: brightness(1.5);
+}
+.calculator span i{
+    position: relative;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.calculator .plus{
+    background: #FFEA33;
+}
+.calculator .minus{
+    background: #FFEA33;
+}
+.calculator .multiply{
+    background: #FFEA33;
+}
+.calculator .divide{
+    background: #FFEA33;
+}
+.calculator .clear{
+    background: #FF33C3;
+}
